@@ -1,0 +1,78 @@
+[
+	{
+		"name": "connector",
+		"title": "Connector",
+		"description": "Build DDL Test",
+		"version": "1.0",
+		"tags": [
+			"service"
+		],
+		"icon": {
+			"type": "url",
+			"value": "//s3.amazonaws.com/images.tray.io/artisan/icons/connector.png"
+		},
+		"messages": [
+			{
+				"name": "list_incident_types",
+				"description": "Retrieves all incidents of a given type that are accessible to the user.",
+				"type": "public",
+				"input_schema": {
+					"type": "object",
+					"properties": {
+						"type_id": {
+							"title": "Type ID"
+						}
+					},
+					"required": [],
+					"advanced": [],
+					"$schema": "http://json-schema.org/draft-04/schema#",
+					"additionalProperties": false
+				},
+				"output_schema": {
+					"$schema": "http://json-schema.org/draft-04/schema#",
+					"type": "object",
+					"properties": {}
+				},
+				"title": "List incident types",
+				"dynamic_output": false
+			},
+			{
+				"title": "List incident types DDL",
+				"name": "list_incident_types_ddl",
+				"type": "ddl",
+				"input_schema": {
+					"type": "object",
+					"properties": {},
+					"required": [],
+					"advanced": [],
+					"$schema": "http://json-schema.org/draft-04/schema#",
+					"additionalProperties": false
+				}
+			},
+			{
+				"name": "sample_operation",
+				"title": "Sample operation",
+				"description": "Just a sample operation.",
+				"type": "public",
+				"input_schema": {
+					"type": "object",
+					"properties": {},
+					"required": [],
+					"advanced": [],
+					"$schema": "http://json-schema.org/draft-04/schema#",
+					"additionalProperties": false
+				},
+				"output_schema": {
+					"$schema": "http://json-schema.org/draft-04/schema#",
+					"type": "object",
+					"properties": {
+						"result": {
+							"type": "string"
+						}
+					}
+				},
+				"dynamic_output": false
+			}
+		]
+	}
+]

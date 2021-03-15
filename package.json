@@ -1,0 +1,29 @@
+{
+	"name": "Connector",
+	"description": "Build DDL Test",
+	"version": "0.0.1",
+	"dependencies": {
+		"@trayio/connector-utils": "^0.3.6",
+		"@trayio/falafel": "^1.27.1"
+	},
+	"scripts": {
+		"start": "node-dev main.js",
+		"packagei": "npm i --package-lock-only",
+		"lint": "eslint ./ --fix"
+	},
+	"publishConfig": {
+		"registry": "http://registry.npmjs.org"
+	},
+	"author": "Brent Thomas",
+	"license": "ISC",
+	"devDependencies": {
+		"express": "^4.17.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "connectors"
+	},
+	"engines": {
+		"node": "8.10.0"
+	}
+}
